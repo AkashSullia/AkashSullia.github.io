@@ -8,12 +8,20 @@
 }
 
 header {
-    background: #000;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
 }
 
 .nav-bar {
     display: flex;
     padding: 4px 12px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .nav-logo img {
@@ -57,9 +65,22 @@ header {
     width: 100%;
 }
 
+.container {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+.page {
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
 .content {
     margin-top: 3em;
-    padding: 8em 0;
+    padding: 16em 0;
     padding-left: 750px;
     margin-left: 300px;
 }
@@ -135,80 +156,55 @@ header {
 }
 
 .about-us-content {
-    margin-top: 6em;
+    margin-top: 10em;
+    padding: 8em 2em;
 }
 
 .about-us-content h2 {
     font-size: 2em;
     text-align: left;
-    padding-left: 2.2em;
 }
 
-.about-us-content {
-    margin-top: 6em;
+.about-us-content p {
+    padding: 0.8em 1em;
+}
+
+.our-usp {
+    padding: 0.8em 0em;
+}
+
+.our-usp ul {
+    padding-left: 0.8em;
+}
+
+.our-usp ul li {
+    list-style: disc inside;
+}
+
+.products-content {
+    margin-top: 10em;
+    padding: 8em 2em;
+}
+
+.products-content h2 {
+    font-size: 2em;
+    text-align: left;
+}
+
+.contact-content {
+    margin-top: 10em;
+    padding: 8em 2em;
+}
+
+.contact-content h2 {
+    font-size: 2em;
+    text-align: left;
 }
 /*
-header ul {
-    position: relative;
-    padding-left: 20em;
-    display: flex;
-}
-
-header ul li {
-}
-
-header ul li a {
-    position: relative;
-    padding: 2em 3.5em;
-    color: #FFF;
-    display: inline-block;
-    text-decoration: none;
-}
-/*
-.right-col {
-    text-align: center;
-    margin: 3em 1em;
-}
-
-h2 {
-    text-transform: uppercase;
-    position: relative;
-}
-
-h2::before {
-    content: ' ';
-    position: absolute;
-    width: 8em;
-    background: #00BFFF;
-    height: .4em;
-    bottom: 0;
-    z-index: -1;
-    margin-left: -.3em;
-}
-
-img {
-    width: 100%;
-}
-
-p {
-    line-height: var(--leading);
-}
-
-.overlay {
-    position: absolute;
-    height: 100vh;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.9);
-    z-index: 1;
-    place-content: center;
-    color: white;
-    display: none;
-    opacity: 0;
-}
-
 @media (min-width: 730px) {
 }
 
 @media (min-width: 930px) {
 
 }
+*/
