@@ -171,7 +171,20 @@ body {
     list-style: disc inside;
 }
 
+.our-clientele {
+    float: left;
+}
+
+.our-clientele h2 {
+    padding-bottom: 0.5em;
+}
+.our-clientele img {
+    width: 650px;
+}
+
+
 .about-us-content .partners {
+    display: inline;
     text-align: center;
     font-size: 2em;
     padding: 2em 0;
@@ -180,7 +193,14 @@ body {
 .about-us-content .partners .column {
     float: left;
     width: 50%;
-    padding: 1.5em;
+}
+
+.about-us-content .partners .camfy {
+    padding: 1em 0;
+}
+
+.about-us-content .partners .eyeseal {
+    margin-left: 2.8em;
 }
 
 .products-content {
@@ -192,6 +212,69 @@ body {
     font-size: 2em;
     text-align: left;
 }
+
+.product-container .product {
+    width: 500px;
+    height: 600px;
+    padding: 1em 2em;
+    display: inline-block;
+    position: relative;
+    border: 2px solid;
+}
+
+.eye-seal img{
+    position: absolute;
+    padding-top: 6em;
+    width: 80%;
+}
+
+.face-ai img {
+    position: absolute;
+    padding-top: 8.8em;
+    width: 80%;
+}
+
+.i-inventory img {
+    position: absolute;
+    padding: 7.5em 1em;
+    width: 74%;
+}
+
+.product .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    color: #FFF;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.product:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  padding: 0.8em 0.8em;
+}
+
+
+.product .title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product .advantage {
+    padding: 0.8em 0.4em;
+}
+
+.product .get-quote {
+    text-align: center;
+    font-weight: bold;
+    color: #2475BB;
+}
+
 
 .contact-content {
     margin-top: 10em;
