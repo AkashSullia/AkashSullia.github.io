@@ -85,6 +85,7 @@ body {
     margin-left: 200px;
 }
 
+
 .content h1 {
     font-size: 60px;
     padding-left: 2.5em;
@@ -143,17 +144,6 @@ body {
     float: right;
 }
 
-.partners {
-    text-align: center;
-    font-size: 2em;
-    padding: 2em 0;
-}
-
-.partners .column {
-    float: left;
-    width: 50%;
-    padding: 1.5em;
-}
 
 .about-us-content {
     margin-top: 10em;
@@ -181,6 +171,18 @@ body {
     list-style: disc inside;
 }
 
+.about-us-content .partners {
+    text-align: center;
+    font-size: 2em;
+    padding: 2em 0;
+}
+
+.about-us-content .partners .column {
+    float: left;
+    width: 50%;
+    padding: 1.5em;
+}
+
 .products-content {
     margin-top: 10em;
     padding: 8em 2em;
@@ -200,6 +202,36 @@ body {
     font-size: 2em;
     text-align: left;
 }
+
+.contact-content .address {
+    padding: 2em 1em;
+}
+
+.contact-content .phone-email {
+    padding: 2em 1em;
+}
+
+.contact-content .sm-icons {
+    padding-top: 6em;
+    text-align: left;
+}
+
+.contact-content .sm-icons ul {
+    display: inline;
+}
+
+.contact-content .sm-icons ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.contact-content .sm-icons ul li img {
+    float: left;
+    padding: 1em 2em;
+    width: 100px;
+}
+
+
 /*
 @media (min-width: 730px) {
 }
