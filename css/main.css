@@ -213,11 +213,21 @@ body {
     text-align: left;
 }
 
+.products-content .product-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.product-container::-webkit-scrollbar {
+    display: none;
+}
+
 .product-container .product {
+    display: inline-block;
     width: 500px;
     height: 600px;
-    padding: 1em 2em;
-    display: inline-block;
+    padding: 4em 2em;
     position: relative;
     border: 2px solid;
 }
@@ -225,19 +235,37 @@ body {
 .eye-seal img{
     position: absolute;
     padding-top: 6em;
-    width: 80%;
+    width: 90%;
 }
 
 .face-ai img {
     position: absolute;
     padding-top: 8.8em;
-    width: 80%;
+    width: 90%;
 }
 
 .i-inventory img {
     position: absolute;
     padding: 7.5em 1em;
-    width: 74%;
+    width: 90%;
+}
+
+.i-trailer img {
+    position: absolute;
+    padding: 7.5em 1em;
+    width: 90%;
+}
+
+.i-cits img {
+    position: absolute;
+    padding: 5em 0.6em;
+    width: 90%;
+}
+
+.smart-store img {
+    position: absolute;
+    padding: 4.5em 0.6em;
+    width: 85%;
 }
 
 .product .overlay {
@@ -248,15 +276,16 @@ body {
     background-color: #000;
     color: #FFF;
     overflow: hidden;
+    white-space: normal;
     width: 100%;
     height: 0;
     transition: .5s ease;
 }
 
 .product:hover .overlay {
-  bottom: 0;
-  height: 100%;
-  padding: 0.8em 0.8em;
+    bottom: 0;
+    height: 100%;
+    padding: 0.8em 0.8em;
 }
 
 
@@ -265,8 +294,17 @@ body {
     font-size: 20px;
 }
 
+.product .desc {
+    padding: 0.8em 0.4em;
+}
+
 .product .advantage {
     padding: 0.8em 0.4em;
+}
+
+.product .advantage ul li{
+    margin-left: 0.8em;
+    list-style: disc;
 }
 
 .product .get-quote {
@@ -306,6 +344,10 @@ body {
 .contact-content .sm-icons ul li {
     display: inline-block;
     list-style: none;
+}
+
+.contact-content .mapouter {
+    display: inline-block;
 }
 
 .contact-content .sm-icons ul li img {
