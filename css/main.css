@@ -229,13 +229,15 @@ nav {
     height: 600px;
     padding: 4em 2em;
     position: relative;
+    background: rgba(1, 1, 1, 0.1);
     border: 2px solid;
 }
 
 .eye-seal img{
     position: absolute;
     padding-top: 6em;
-    width: 90%;
+    padding-right: 1em;
+    width: 100%;
 }
 
 .face-ai img {
