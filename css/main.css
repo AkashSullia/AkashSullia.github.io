@@ -357,11 +357,39 @@ body {
 }
 
 
-/*
-@media (min-width: 730px) {
+
+@media screen and (min-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .nav-bar {
+        display: flex;
+        padding: 2px 8px;
+        position: fixed;
+        z-index: 1;
+        width: 50%;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .nav-logo img {
+        width: 20%;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+    }
 }
 
 @media (min-width: 930px) {
 
 }
-*/
+
