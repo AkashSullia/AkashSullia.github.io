@@ -292,6 +292,7 @@ nav {
 
 
 .product .title {
+    text-align: center;
     font-weight: bold;
     font-size: 20px;
 }
@@ -307,6 +308,26 @@ nav {
 .product .advantage ul li{
     margin-left: 0.8em;
     list-style: disc;
+}
+
+.face-ai .advantage {
+    padding-top: 5em;
+}
+
+.i-inventory .advantage {
+    padding-top: 5em;
+}
+
+.i-trailer .advantage {
+    padding-top: 5em;
+}
+
+.i-cits .advantage {
+    padding-top: 5em;
+}
+
+.smart-store .advantage {
+    padding-top: 5em;
 }
 
 .product .more-details {
