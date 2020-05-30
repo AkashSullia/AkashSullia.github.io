@@ -29,29 +29,23 @@ nav {
 }
 
 .nav-links {
-    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
 }
 
-.nav-links ul {
-    margin-left: 28em;
-    display: inline;
-    text-align: center;
-}
 
-.nav-links ul li {
-    position: relative;
+.nav-links li {
     list-style: none;
-    display: inline-block;
-    padding: 2.5em 5em;
 }
 
-.nav-links ul a {
+.nav-links a {
     color: #FFF;
     text-decoration: none;
     font-size: 18px;
 }
 
-.nav-links ul li::after {
+.nav-links li::after {
     content: '';
     width: 0;
     height: 2px;
@@ -61,7 +55,7 @@ nav {
     transition: 0.4s;
 }
 
-.nav-links ul li:hover::after {
+.nav-links li:hover::after {
     width: 100%;
 }
 
@@ -79,10 +73,23 @@ nav {
 }
 
 .content {
-    margin-top: 3em;
-    padding: 12em 0;
-    padding-left: 600px;
-    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas:
+        "image text";
+    /*margin-top: 3em;*/
+    padding: 12em 4em;
+    /*padding-left: 600px;
+    /*margin-left: 200px;*/
+}
+
+.content .image img {
+    grid-area: image;
+    width: 90%;
+}
+
+.content .text {
+    grid-area: text;
 }
 
 
@@ -145,6 +152,7 @@ nav {
 }
 
 
+
 .about-us-content {
     margin-top: 10em;
     padding: 8em 2em;
@@ -201,6 +209,15 @@ nav {
 
 .about-us-content .partners .eyeseal {
     margin-left: 2.8em;
+}
+
+.our-team-content {
+    padding: 8em 2em;
+}
+
+.our-team-content h2 {
+    font-size: 2em;
+    text-align: left;
 }
 
 .products-content {
