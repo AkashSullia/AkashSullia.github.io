@@ -7,25 +7,25 @@
     font-family: 'Poppins', sans-serif;
 }
 
-header {
-}
-
 body {
     height: 100vh;
     overflow: hidden;
 }
 
-.nav-bar {
+nav {
     display: flex;
-    padding: 4px 12px;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2px 16px;
     position: fixed;
     z-index: 1;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
 }
 
 .nav-logo img {
-    width: 40%;
+    width: 30%;
 }
 
 .nav-links {
@@ -307,9 +307,14 @@ body {
     list-style: disc;
 }
 
-.product .get-quote {
+.product .more-details {
     text-align: center;
     font-weight: bold;
+    color: #2475BB;
+}
+
+.product .more-details a {
+    text-decoration: none;
     color: #2475BB;
 }
 
@@ -358,7 +363,7 @@ body {
 
 
 
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
     body {
         overflow-x: hidden;
     }
@@ -392,4 +397,4 @@ body {
 @media (min-width: 930px) {
 
 }
-
+*/
