@@ -73,30 +73,43 @@ nav {
 }
 
 .content {
-    display: grid;
-    background: url('images/First Image.png');
-    grid-template-columns: repeat(2, 50%);
-    grid-template-areas:
-        "image text";
-    margin-top: 3em;
-    padding: 8em 2em;
-    /*padding-left: 600px;
-    /*margin-left: 200px;*/
+    position: relative;
+    background-image: url('images/First Image.png');
+    background-width: 100%;
 }
 
-.content .image img {
-    grid-area: image;
-    width: 90%;
+.content .image {
+}
+
+.content .image img{
+    width: 100%;
+    height: 100vh;
+    -webkit-filter: blur(3px);
 }
 
 .content .text {
-    grid-area: text;
+    color: #FFF;
+    /*background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));*/
+    background: rgba(0, 0, 0, 0.35);
+    position: absolute;
+    top: 32%;
+    left: 4%;
+    margin-right: 48em;
+    margin-left: 3em;
+    margin-bottom: 10em;
+    border-radius: 1em;
+}
+
+.content .text img{
+    filter: invert(1);
 }
 
 
+
 .content h1 {
-    font-size: 60px;
-    padding-left: 2.5em;
+    padding-top: 0.6em;
+    font-size: 2.5em;
+    text-align: center;
     padding-bottom: 0.4em;
 }
 
@@ -298,6 +311,10 @@ nav {
     margin-left: 1.8em;
 }
 
+.our-team-content .modal ul {
+    margin-left: 1.8em;
+}
+
 .our-team-content .modal.active {
     transform: translate(-50%, -50%) scale(1);
 }
@@ -326,7 +343,7 @@ nav {
 
 .our-team-content .modal-body {
     padding: 1em 1.5em;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 #overlay {
@@ -376,6 +393,7 @@ nav {
     border: 2px solid;
 }
 
+
 .eye-seal img{
     position: absolute;
     padding-top: 6em;
@@ -409,8 +427,8 @@ nav {
 
 .smart-store img {
     position: absolute;
-    padding: 4.5em 0.6em;
-    width: 85%;
+    padding: 7em 0.6em;
+    width: 90%;
 }
 
 .product .overlay {
@@ -437,7 +455,7 @@ nav {
 .product .title {
     text-align: center;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.4em;
 }
 
 .product .desc {
@@ -453,19 +471,24 @@ nav {
     list-style: disc;
 }
 
-.face-ai .advantage {
+.face-ai .title,.desc,.advantage {
+    padding-top: 4.2em;
 }
 
-.i-inventory .advantage {
+.i-inventory .title,.desc,.advantage {
+    padding-top: 3.6em;
 }
 
-.i-trailer .advantage {
+.i-trailer .title,.desc,.advantage {
+    padding-top: 5.4em;
 }
 
-.i-cits .advantage {
+.i-cits .title,.desc,.advantage {
+    padding-top: 4.4em;
 }
 
-.smart-store .advantage {
+.smart-store .title,.desc,.advantage {
+    padding-top: 4.4em;
 }
 
 .product .more-details {
