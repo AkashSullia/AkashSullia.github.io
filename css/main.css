@@ -74,11 +74,12 @@ nav {
 
 .content {
     display: grid;
+    background: url('images/First Image.png');
     grid-template-columns: repeat(2, 50%);
     grid-template-areas:
         "image text";
-    /*margin-top: 3em;*/
-    padding: 12em 4em;
+    margin-top: 3em;
+    padding: 8em 2em;
     /*padding-left: 600px;
     /*margin-left: 200px;*/
 }
@@ -220,6 +221,131 @@ nav {
     text-align: left;
 }
 
+.our-team-content section {
+    padding: 3rem;
+    background-color: #FFF;
+}
+
+.our-team-content .profile-heads {
+    padding: 2rem 0;
+    background-color: #FFF;
+}
+
+.card-wrapper {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 30rem;
+    background-color: #EBEEF8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.card .profile-img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 20%;
+    margin-top: -5rem;
+    z-index: 3;
+    border: 1px solid #EBEEF8;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 2.0rem;
+    color: #333;
+    margin: 1.5rem 0;
+}
+
+.job-title {
+    color: #777;
+    font-size: 1.5rem;
+}
+
+.card .about {
+    padding: 0.3rem 2.0rem;
+    background-color: #445AE3;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: #EEE;
+    font-size: 1.2rem;
+}
+
+.our-team-content .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    padding: 1em 1em;
+    background-color: white;
+    width: 80%;
+}
+
+.our-team-content .modal ol {
+    margin-left: 1.8em;
+}
+
+.our-team-content .modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.our-team-content .modal-header {
+    padding: 1em 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.our-team-content .modal-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.our-team-content .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.our-team-content .modal-body {
+    padding: 1em 1.5em;
+    font-size: 0.8rem;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: 200ms ease-in-out;
+}
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
+}
+
 .products-content {
     margin-top: 10em;
     padding: 8em 2em;
@@ -328,23 +454,18 @@ nav {
 }
 
 .face-ai .advantage {
-    padding-top: 5em;
 }
 
 .i-inventory .advantage {
-    padding-top: 5em;
 }
 
 .i-trailer .advantage {
-    padding-top: 5em;
 }
 
 .i-cits .advantage {
-    padding-top: 5em;
 }
 
 .smart-store .advantage {
-    padding-top: 5em;
 }
 
 .product .more-details {
@@ -402,12 +523,21 @@ nav {
 }
 
 
+@media screen and (min-width: 700px) {
+    .card-wrapper {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
 
-/*@media screen and (min-width: 768px) {
+    .card {
+        margin: 2rem;
+    }
+    /*
     body {
         overflow-x: hidden;
     }
-
     .nav-bar {
         display: flex;
         padding: 2px 8px;
@@ -432,9 +562,6 @@ nav {
         width: 50%;
         transform: translateX(100%);
     }
+    */
 }
 
-@media (min-width: 930px) {
-
-}
-*/
