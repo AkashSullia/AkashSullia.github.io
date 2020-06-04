@@ -212,6 +212,12 @@ nav {
     padding: 2em 0;
 }
 
+.about-us-content .partners-logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .about-us-content .partners .column {
     float: left;
     width: 50%;
@@ -1037,6 +1043,7 @@ nav {
     }
 
 }
+
 @keyframes navLinksFade {
     from {
         opacity: 0;
