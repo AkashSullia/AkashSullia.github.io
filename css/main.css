@@ -548,6 +548,10 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .line {
         width: 32px;
         height: 4px;
@@ -776,7 +780,11 @@ nav {
     }
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 460px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .line {
         width: 32px;
         height: 4px;
