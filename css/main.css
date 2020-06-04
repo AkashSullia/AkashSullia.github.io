@@ -876,6 +876,7 @@ nav {
 
     .our-clientele img {
         position: relative;
+        overflow-x: hidden;
         padding-left: 0;
         width: 100vw;
         left: -4%;
