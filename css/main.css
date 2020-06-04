@@ -166,8 +166,6 @@ nav {
     float: right;
 }
 
-
-
 .about-us-content {
     margin-top: 10em;
     padding: 8em 2em;
@@ -878,7 +876,7 @@ nav {
     }
 
     .about-us-content {
-        padding: 5.0em 1em;
+        padding: 7.0em 1em;
     }
 
     .about-us-content h2 {
@@ -888,7 +886,7 @@ nav {
 
     .about-us-content p {
         font-size: 0.8em;
-        padding: 0.4em 0.8em;
+        padding: 1.0em 0.8em;
     }
 
     .our-usp ul {
@@ -903,27 +901,22 @@ nav {
     }
 
     .about-us-content .partners .column {
-        float: left;
-        width: 50%;
-    }
-
-    .about-us-content .partners .camfy {
-        padding: 0.2em;
-    }
-
-    .about-us-content .partners .camfy img {
-        padding: 0;
+        float: none;
         width: 70%;
     }
 
-    .about-us-content .partners .eyeseal {
-        padding: 0.2em;
-        margin-left: 0;
+    .about-us-content .partners-logos {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    .about-us-content .partners .eyeseal img {
+    .about-us-content .partners .camfy {
+        padding: 0 0;
+    }
+
+    .about-us-content .partners .eyeseal {
         margin-left: 0;
-        width: 100%;
     }
 
     .our-team-content {
