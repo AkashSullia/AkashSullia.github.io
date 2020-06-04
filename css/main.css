@@ -556,7 +556,8 @@ nav {
     }
 
     nav {
-        position: relative;
+        max-height: 10vh;
+        position: fixed;
     }
 
     .hamburger {
@@ -564,7 +565,7 @@ nav {
         position: fixed;
         cursor: pointer;
         right: 15%;
-        top: 3%;
+        top: 1%;
         transform: translate(-5%, 50%);
     }
 
@@ -592,7 +593,7 @@ nav {
     .nav-logo img {
         padding: 0;
         margin-left: 2em;
-        width: 40%;
+        width: 30%;
     }
 
     .content .text {
@@ -629,7 +630,7 @@ nav {
     }
 
     .about-us-content {
-        padding: 2em 2em;
+        padding: 8em 2em;
     }
 
     .about-us-content .partners {
@@ -664,7 +665,7 @@ nav {
     }
 
     .our-team-content {
-        padding: 0.5em 2em;
+        padding: 7.0em 2em;
     }
 
     .our-team-content section {
@@ -773,48 +774,268 @@ nav {
         padding: 0.8em 1.2em;
         font-size: 0.8rem;
     }
+}
 
-    /*
-    .card-wrapper {
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-items: center;
+@media screen and (max-width: 435px) {
+    .line {
+        width: 32px;
+        height: 4px;
+        background: white;
+        margin: 8px;
     }
 
-    .card {
-        margin: 2rem;
-    }
-    body {
-        overflow-x: hidden;
-    }
-    .nav-bar {
-        display: flex;
-        padding: 2px 8px;
+    nav {
+        max-height: 10vh;
         position: fixed;
-        z-index: 1;
-        width: 50%;
-        background: rgba(0, 0, 0, 0.8);
     }
 
-    .nav-logo img {
-        width: 20%;
+    .hamburger {
+        z-index: 5;
+        position: fixed;
+        cursor: pointer;
+        right: 15%;
+        top: 1%;
+        transform: translate(-5%, 50%);
     }
 
     .nav-links {
-        position: absolute;
+        position: fixed;
         right: 0px;
-        height: 92vh;
-        top: 8vh;
+        height: 100vh;
+        width: 40%;
+        padding: 8em 1em;
+        background: rgba(0, 0, 0, 0.8);
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+
+    .nav-logo img {
+        padding: 0;
+        margin-left: 2em;
+        width: 25%;
+    }
+
+    .content .text {
+        color: #FFF;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.35);
+        top: 30%;
+        left: 0%;
+        margin: 0em 0em;
+        width: 100%;
+    }
+
+    .content h1 {
+        padding-top: 0.6em;
+        font-size: 1.8em;
+        text-align: center;
+        padding-bottom: 0.4em;
+    }
+
+    .content .ai {
+        padding: 0.6em 1.5em;
+        font-size: 1em;
+    }
+
+    .content .fc {
+        padding: 0.6em 1.5em;
+        font-size: 1em;
+    }
+
+    .content .ip {
+        padding: 0.6em 1.5em;
+        font-size: 1em;
+    }
+
+    .content .da {
+        padding: 0.6em 1.5em;
+        font-size: 1em;
+    }
+
+    .our-clientele img {
+        position: relative;
+        padding-left: 0;
+        width: 100vw;
+        left: -4%;
+    }
+
+    .about-us-content {
+        padding: 5.0em 1em;
+    }
+
+    .about-us-content h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .about-us-content p {
+        font-size: 0.8em;
+        padding: 0.4em 0.8em;
+    }
+
+    .our-usp ul {
+        font-size: 0.8em;
+    }
+
+    .about-us-content .partners {
+        display: inline;
+        text-align: center;
+        font-size: 1.5em;
+        padding: 2em 0;
+    }
+
+    .about-us-content .partners .column {
+        float: left;
+        width: 50%;
+    }
+
+    .about-us-content .partners .camfy {
+        padding: 0.2em;
+    }
+
+    .about-us-content .partners .camfy img {
+        padding: 0;
+        width: 70%;
+    }
+
+    .about-us-content .partners .eyeseal {
+        padding: 0.2em;
+        margin-left: 0;
+    }
+
+    .about-us-content .partners .eyeseal img {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .our-team-content {
+        padding: 5.0em 2em;
+    }
+
+    .our-team-content h2 {
+        font-size: 1.5em;
+        text-align: center;
+        padding-bottom: 0.5em;
+    }
+
+    .our-team-content section {
+        padding: 0.6rem;
+        background-color: #FFF;
+    }
+
+    .our-team-content .profile-heads {
+        padding: 1.8rem 0;
+        background-color: #FFF;
+    }
+
+    .card-wrapper {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100vw;
+        height: 6.5rem;
+        background-color: #EBEEF8;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 50%;
-        transform: translateX(100%);
+        justify-content: center;
+        margin: 3rem 0;
+        box-shadow: .5rem .5rem 2rem rgba(0, 0, 0, 0.2);
     }
-    */
-}
 
+    .card .profile-img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 20%;
+        margin-top: -6rem;
+        z-index: 3;
+        border: 1px solid #EBEEF8;
+    }
+
+    .card h3 {
+        text-align: center;
+        font-size: 1.2rem;
+        color: #333;
+        margin: 0.6rem 0;
+    }
+
+    .job-title {
+        color: #777;
+        font-size: 0.9rem;
+    }
+
+    .card .about {
+        padding: 0.3rem 1.5rem;
+        background-color: #445AE3;
+        border-radius: 2rem;
+        margin: 0.3rem 0;
+        text-transform: uppercase;
+        color: #EEE;
+        font-size: 0.6rem;
+    }
+
+    .our-team-content .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0);
+        transition: 200ms ease-in-out;
+        border: 1px solid black;
+        border-radius: 10px;
+        z-index: 10;
+        padding: 1em 1em;
+        background-color: white;
+        width: 90%;
+        min-height: 75%;
+        overflow-y: scroll;
+    }
+
+    .our-team-content .modal ol {
+        margin-left: 1.8em;
+    }
+
+    .our-team-content .modal ul {
+        margin-left: 1.8em;
+    }
+
+    .our-team-content .modal.active {
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    .our-team-content .modal-header {
+        padding: 0.2em 1.2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+
+    .our-team-content .modal-title {
+        font-size: 1.60rem;
+        font-weight: bold;
+    }
+
+    .our-team-content .modal-body {
+        position: absolute;
+        padding: 0.8em 1.2em;
+        font-size: 0.8rem;
+    }
+
+}
 @keyframes navLinksFade {
     from {
         opacity: 0;
