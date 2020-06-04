@@ -739,6 +739,8 @@ nav {
         padding: 1em 1em;
         background-color: white;
         width: 90%;
+        min-height: 75%;
+        overflow-y: scroll;
     }
 
     .our-team-content .modal ol {
@@ -762,14 +764,14 @@ nav {
     }
 
     .our-team-content .modal-title {
-        font-size: 0.95rem;
+        font-size: 1.60rem;
         font-weight: bold;
     }
 
     .our-team-content .modal-body {
+        position: absolute;
         padding: 0.8em 1.2em;
-        font-size: 0.75rem;
-        overflow-y: scroll;
+        font-size: 0.8rem;
     }
 
     /*
