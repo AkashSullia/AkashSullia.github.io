@@ -75,17 +75,16 @@ nav {
 
 .content {
     position: relative;
-    background-image: url('images/First Image.png');
-    background-width: 100%;
+    background: rgba(0, 0, 0, 0.8);
 }
 
 .content .image {
 }
 
 .content .image img{
-    width: 100%;
-    height: 100vh;
-    -webkit-filter: blur(3px);
+    position: absolute;
+    right: 6%;
+    bottom: 20%;
 }
 
 .content .text {
