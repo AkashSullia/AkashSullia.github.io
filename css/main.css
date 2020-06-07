@@ -15,16 +15,17 @@ body {
 nav {
     display: flex;
     min-height: 8vh;
-    background: rgba(0, 0, 0, 0.8);
-    position: fixed;
+    max-height: 16vh;
+    background: #DDD;
+    position: absolute;
     z-index: 1;
     width: 100%;
 }
 
 .nav-logo img {
-    padding: 0.4em;
-    margin-left: 2.5em;
-    width: 30%;
+    padding: 0 2em;
+    margin-left: 5.4em;
+    width: 42%;
 }
 
 .nav-links {
@@ -41,7 +42,7 @@ nav {
 }
 
 .nav-links a {
-    color: #FFF;
+    color: #000;
     text-decoration: none;
     font-size: 18px;
 }
@@ -60,22 +61,13 @@ nav {
     width: 100%;
 }
 
-.container {
-    width: 100%;
-    height: 100%;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-}
-
 .page {
     height: 100vh;
-    scroll-snap-align: center;
 }
 
 .content {
     position: relative;
-    background: rgba(0, 0, 0, 0.8);
+    background: #313131;
 }
 
 .content .image {
@@ -166,8 +158,7 @@ nav {
 }
 
 .about-us-content {
-    margin-top: 10em;
-    padding: 8em 2em;
+    padding: 10em 10em;
 }
 
 .about-us-content h2 {
@@ -227,11 +218,11 @@ nav {
 }
 
 .about-us-content .partners .eyeseal {
-    margin-left: 2.8em;
+    margin-left: 2.5em;
 }
 
 .our-team-content {
-    padding: 8em 2em;
+    padding: 8em 10em;
 }
 
 .our-team-content h2 {
@@ -257,7 +248,8 @@ nav {
 }
 
 .card {
-    width: 30rem;
+    width: 30%;
+    height: 30em;
     background-color: #EBEEF8;
     display: flex;
     flex-direction: column;
@@ -279,8 +271,13 @@ nav {
 .card h3 {
     text-align: center;
     font-size: 2.0rem;
+    padding: 1em;
     color: #333;
     margin: 1.5rem 0;
+}
+
+.sudhendra h3 {
+    font-size: 1.6rem;
 }
 
 .job-title {
@@ -298,6 +295,7 @@ nav {
     font-size: 1.2rem;
 }
 
+
 .our-team-content .modal {
     position: fixed;
     top: 50%;
@@ -310,6 +308,7 @@ nav {
     padding: 1em 1em;
     background-color: white;
     width: 80%;
+    overflow-y: scroll;
 }
 
 .our-team-content .modal ol {
@@ -369,8 +368,11 @@ nav {
 }
 
 .products-content {
-    margin-top: 10em;
     padding: 8em 2em;
+}
+
+.products {
+    overflow-y: scroll;
 }
 
 .products-content h2 {
@@ -378,98 +380,104 @@ nav {
     text-align: left;
 }
 
-.products-content .product-container {
-    overflow-x: scroll;
-    overflow-y: hidden;
-    white-space: nowrap;
+.product-list {
+    padding-top: 1em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 4em;
+    grid-row-gap: 4em;
 }
 
-.product-container::-webkit-scrollbar {
-    display: none;
+.product-list .prod-card {
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    padding: 2em;
+    box-shadow: 0px 10px 5px #B2BEC3;
+    text-align: center;
 }
 
-.product-container .product {
+.prod-card .title {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.6em;
+}
+
+.prod-card img {
+}
+
+.product-list button {
+    font-size: 1.0em;
+    font-weight: bold;
+    border: none;
     display: inline-block;
-    width: 500px;
-    height: 600px;
-    padding: 4em 2em;
-    position: relative;
-    background: rgba(1, 1, 1, 0.1);
-    border: 2px solid;
+    margin-top: 0.8em;
+    padding: 0.1em 0.5em;
+    padding-top: 0.4em;
+    border-radius: 5px;
+    background-color: #3498DB;
+    cursor: pointer;
 }
 
+.product-list button:hover {
+    box-shadow: 0px 6px 6px #313131;
+}
 
-.eye-seal img{
-    position: absolute;
-    padding-top: 6em;
-    padding-right: 1em;
+.eye-seal img {
     width: 100%;
+    padding: 2.5em;
 }
 
 .face-ai img {
-    position: absolute;
-    padding-top: 8.8em;
-    width: 90%;
+    width: 100%;
 }
 
+
 .i-inventory img {
-    position: absolute;
-    padding: 7.5em 1em;
     width: 90%;
 }
 
 .i-trailer img {
-    position: absolute;
-    padding: 7.5em 1em;
-    width: 90%;
+    width: 100%;
+    padding: 2.5em;
 }
 
 .i-cits img {
-    position: absolute;
-    padding: 5em 0.6em;
-    width: 90%;
+    width: 78%;
+    padding: 1.0em;
 }
 
 .smart-store img {
-    position: absolute;
-    padding: 7em 0.6em;
-    width: 90%;
-}
-
-.product .overlay {
-    position: absolute;
-    bottom: 100%;
-    left: 0;
-    right: 0;
-    background-color: #000;
-    color: #FFF;
-    overflow: hidden;
-    white-space: normal;
     width: 100%;
-    height: 0;
-    transition: .5s ease;
+    padding: 1.0em;
 }
 
-.product:hover .overlay {
-    bottom: 0;
-    height: 100%;
-    padding: 0.8em 0.8em;
+.products-content .modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    padding: 1em 1em;
+    background-color: white;
+    width: 80%;
+    overflow-y: scroll;
+}
+
+.products-content .modal.active {
+    transform: translate(-50%, -50%) scale(1);
 }
 
 
+/*
 .product .title {
     text-align: center;
     font-weight: bold;
     font-size: 1.4em;
 }
 
-.product .desc {
-    padding: 0.8em 0.4em;
-}
-
-.product .advantage {
-    padding: 0.8em 0.4em;
-}
 
 .product .advantage ul li{
     margin-left: 0.8em;
@@ -506,11 +514,10 @@ nav {
     text-decoration: none;
     color: #2475BB;
 }
-
+*/
 
 .contact-content {
-    margin-top: 10em;
-    padding: 8em 2em;
+    padding: 8em 18em;
 }
 
 .contact-content h2 {
@@ -519,10 +526,12 @@ nav {
 }
 
 .contact-content .address {
+    font-size: 1.5em;
     padding: 2em 1em;
 }
 
 .contact-content .phone-email {
+    font-size: 1.5em;
     padding: 2em 1em;
 }
 
