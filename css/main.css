@@ -280,6 +280,10 @@ nav {
     font-size: 1.6rem;
 }
 
+.arul h3 {
+    font-size: 1.8rem;
+}
+
 .job-title {
     color: #777;
     font-size: 1.5rem;
@@ -461,9 +465,18 @@ nav {
     border-radius: 10px;
     z-index: 10;
     padding: 1em 1em;
-    background-color: white;
+    background-color: #85B8F9;
     width: 80%;
     overflow-y: scroll;
+}
+
+.products-content .modal .desc {
+    text-align: left;
+}
+
+.products-content .modal .advantage {
+    text-align: left;
+    margin-left: 2em;
 }
 
 .products-content .modal.active {
