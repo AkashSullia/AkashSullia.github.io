@@ -16,7 +16,7 @@ nav {
     display: flex;
     min-height: 8vh;
     max-height: 16vh;
-    background: #DDD;
+    background: #FFF;
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -222,7 +222,7 @@ nav {
 }
 
 .our-team-content {
-    padding: 8em 10em;
+    padding: 10em 10em;
 }
 
 .our-team-content h2 {
@@ -231,11 +231,11 @@ nav {
 }
 
 .our-team-content section {
-    padding: 3rem;
     background-color: #FFF;
 }
 
 .our-team-content .profile-heads {
+    margin-top: 2em;
     padding: 2rem 0;
     background-color: #FFF;
 }
@@ -372,7 +372,7 @@ nav {
 }
 
 .products-content {
-    padding: 8em 2em;
+    padding: 10em 8em;
 }
 
 .products {
@@ -530,7 +530,7 @@ nav {
 */
 
 .contact-content {
-    padding: 8em 18em;
+    padding: 10em 12em;
 }
 
 .contact-content h2 {
