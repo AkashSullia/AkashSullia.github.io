@@ -23,16 +23,16 @@ nav {
 }
 
 .nav-logo img {
-    padding: 0 2em;
+    padding: 2em 2em;
     margin-left: 5.4em;
-    width: 42%;
+    width: 45%;
 }
 
 .nav-links {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
+    width: 100%;
     margin-left: auto;
 }
 
@@ -222,7 +222,7 @@ nav {
 }
 
 .our-team-content {
-    padding: 10em 10em;
+    padding: 10em 8em;
 }
 
 .our-team-content h2 {
@@ -235,9 +235,9 @@ nav {
 }
 
 .our-team-content .profile-heads {
-    margin-top: 2em;
-    padding: 2rem 0;
+    margin-top: 1em;
     background-color: #FFF;
+    overflow-y: scroll;
 }
 
 .card-wrapper {
@@ -245,25 +245,28 @@ nav {
     align-items: center;
     align-content: center;
     flex-direction: row;
+    text-align: center;
 }
 
 .card {
+    height: 34em;
     width: 30%;
-    height: 30em;
+    padding: 2em 4em;
     background-color: #EBEEF8;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2rem 3em;
+    margin: 1rem 3em;
     box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .card .profile-img {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 20%;
-    margin-top: -5rem;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 80%;
+    margin-top: -2rem;
     z-index: 3;
     border: 1px solid #EBEEF8;
 }
@@ -279,6 +282,24 @@ nav {
 .sudhendra h3 {
     font-size: 1.6rem;
 }
+
+.sudhendra .profile-img {
+    margin-top: 0.4em;
+}
+
+.arul .profile-img {
+    margin-top: 0.8em;
+}
+
+.vedpal .profile-img {
+    margin-top: 2.8em;
+}
+
+.namrata .profile-img {
+    margin-top: 3.2em;
+    width: 90%;
+}
+
 
 .arul h3 {
     font-size: 1.8rem;
@@ -530,6 +551,7 @@ nav {
 */
 
 .contact-content {
+    overflow: hidden;
     padding: 10em 12em;
 }
 
@@ -1064,6 +1086,13 @@ nav {
         font-size: 0.8rem;
     }
 
+    .product-list {
+        padding-top: 1em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 4em;
+        grid-row-gap: 4em;
+    }
 }
 
 @keyframes navLinksFade {
