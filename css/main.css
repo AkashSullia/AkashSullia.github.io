@@ -279,36 +279,66 @@ nav {
     margin: 1.5rem 0;
 }
 
+.job-title {
+    color: #777;
+    font-size: 1.5rem;
+}
+
 .sudhendra h3 {
     font-size: 1.6rem;
 }
 
 .sudhendra .profile-img {
-    margin-top: 0.4em;
 }
 
 .arul .profile-img {
-    margin-top: 0.8em;
 }
-
-.vedpal .profile-img {
-    margin-top: 2.8em;
-}
-
-.namrata .profile-img {
-    margin-top: 3.2em;
-    width: 90%;
-}
-
 
 .arul h3 {
     font-size: 1.8rem;
 }
 
-.job-title {
-    color: #777;
-    font-size: 1.5rem;
+.vedpal .profile-img {
+    margin-top: 2.0em;
 }
+
+.namrata .profile-img {
+    margin-top: 2.0em;
+}
+
+.namrata h3 {
+    font-size: 1.8rem;
+}
+
+.namrata .job-title {
+    font-size: 1.4rem;
+}
+
+.uma .profile-img {
+    margin-top: 1.5em;
+}
+
+.uma h3 {
+    font-size: 1.8rem;
+}
+
+.dipankar .profile-img {
+    margin-top: 1.5em;
+}
+
+.dipankar h3 {
+    font-size: 1.8rem;
+}
+
+.ganesh .profile-img {
+    margin-top: 1.5em;
+}
+
+.ganesh h3 {
+    font-size: 1.8rem;
+}
+
+
 
 .card .about {
     padding: 0.3rem 2.0rem;
