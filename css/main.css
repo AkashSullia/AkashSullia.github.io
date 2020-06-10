@@ -14,7 +14,7 @@ body {
 
 nav {
     display: flex;
-    min-height: 8vh;
+    min-height: 20vh;
     max-height: 16vh;
     background: #FFF;
     position: absolute;
@@ -23,9 +23,9 @@ nav {
 }
 
 .nav-logo img {
-    padding: 2em 2em;
+    padding: 3em 1em;
     margin-left: 5.4em;
-    width: 45%;
+    width: 50%;
 }
 
 .nav-links {
@@ -45,6 +45,7 @@ nav {
     color: #000;
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .nav-links li::after {
@@ -113,6 +114,14 @@ nav {
     padding: 0.6em 8em;
 }
 
+.content .tagline {
+    text-align: center;
+    padding-top: 4.4em;
+    font-size: 2.4em;
+    font-weight: bold;
+    color: #FFF;
+}
+
 .content .ai img {
     width: 12%;
     float: right;
@@ -162,12 +171,14 @@ nav {
 }
 
 .about-us-content h2 {
-    font-size: 2em;
+    font-size: 1.5em;
     text-align: left;
 }
 
 .about-us-content p {
-    padding: 0.8em 1em;
+    padding: 0.4em 1em;
+    padding-right: 36em;
+    font-size: 0.9em;
 }
 
 .our-usp {
@@ -176,6 +187,7 @@ nav {
 
 .our-usp ul {
     padding-left: 0.8em;
+    font-size: 0.9em;
 }
 
 .our-usp ul li {
@@ -191,14 +203,14 @@ nav {
 }
 
 .our-clientele img {
-    width: 42em;
+    width: 32em;
 }
 
 
 .about-us-content .partners {
     display: inline;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 2em 0;
 }
 
@@ -430,12 +442,23 @@ nav {
     overflow-y: scroll;
 }
 
-.products-content h2 {
-    font-size: 2em;
-    text-align: left;
+.products-content .title {
+    font-size: 1.5em;
+    float: left;
+}
+
+.products-content .download {
+    font-size: 0.8em;
+    float: right;
+}
+
+.products-content .download a{
+    text-decoration: none;
+    color: #205497;
 }
 
 .product-list {
+    clear: both;
     padding-top: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -444,7 +467,7 @@ nav {
 }
 
 .product-list .prod-card {
-    background-color: #F7F7F7;
+    background-color: #E1E1E1;
     border-radius: 10px;
     padding: 2em;
     box-shadow: 0px 10px 5px #B2BEC3;
@@ -486,6 +509,14 @@ nav {
     width: 100%;
 }
 
+.sanitiser .title {
+    font-size: 1.2em;
+}
+
+.sanitiser img {
+    width: 75%;
+    padding: 0.5em;
+}
 
 .i-inventory img {
     width: 90%;
@@ -516,9 +547,8 @@ nav {
     border-radius: 10px;
     z-index: 10;
     padding: 1em 1em;
-    background-color: #85B8F9;
+    background-color: #FFF;
     width: 80%;
-    overflow-y: scroll;
 }
 
 .products-content .modal .desc {
@@ -591,17 +621,17 @@ nav {
 }
 
 .contact-content .address {
-    font-size: 1.5em;
-    padding: 2em 1em;
+    font-size: 1.2em;
+    padding: 1em 1em;
 }
 
 .contact-content .phone-email {
-    font-size: 1.5em;
-    padding: 2em 1em;
+    font-size: 1.2em;
+    padding: 0 1em;
 }
 
 .contact-content .sm-icons {
-    padding-top: 6em;
+    padding-top: 8em;
     text-align: left;
 }
 
