@@ -8,12 +8,11 @@
 }
 
 body {
-    height: 100vh;
-    overflow: hidden;
 }
 
 nav {
     display: flex;
+    position: fixed;
     height: 20vh;
     justify-content: space-between;
     align-items: center;
@@ -33,7 +32,7 @@ nav {
 
 .nav-links {
     display: flex;
-    flex: 0 0 32vw;
+    flex: 0 0 34vw;
 }
 
 .nav-links-1 {
@@ -68,12 +67,12 @@ nav {
 }
 
 .page {
-    height: 100vh;
 }
 
 .content {
     position: relative;
     background: #313131;
+    padding-top: 10em;
 }
 
 
@@ -159,16 +158,22 @@ nav {
 */
 
 .about-us-content {
-    padding: 3em 10em;
-    overflow: visible;
+    padding: 16em 10em;
 }
 
 .about-us-content .tagline {
     text-align: center;
-    margin-top: -2em;
+    margin-top: -4em;
+    padding-bottom: 1em;
     font-size: 1.4em;
     font-weight: bold;
     color: #848484;
+}
+
+.about-us-content .wrapper {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-row-gap: 1em;
 }
 
 .about-us-content h2 {
@@ -178,7 +183,7 @@ nav {
 
 .about-us-content p {
     padding: 0.4em 1em;
-    padding-right: 36em;
+    padding-right: 6em;
     font-size: 0.9em;
 }
 
@@ -187,24 +192,27 @@ nav {
 }
 
 .our-usp ul {
-    padding-left: 0.8em;
+    padding-left: 0.9em;
     font-size: 0.9em;
 }
 
 .our-usp ul li {
     list-style: disc inside;
+    line-height: 3em;
 }
 
 .our-clientele {
-    float: left;
+    padding: 1em;
+    text-align: center;
 }
 
 .our-clientele h2 {
-    padding-bottom: 0.5em;
+    text-align: center;
 }
 
 .our-clientele img {
-    width: 32em;
+    padding: 1em;
+    width: 50em;
 }
 
 
@@ -212,30 +220,36 @@ nav {
     display: inline;
     text-align: center;
     font-size: 1.5em;
-    padding: 2em 0;
+    padding: 1em 0;
 }
 
 .about-us-content .partners-logos {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 1em;
 }
 
 .about-us-content .partners .column {
-    float: left;
-    width: 50%;
 }
 
 .about-us-content .partners .camfy {
-    padding: 1em 0;
 }
 
 .about-us-content .partners .eyeseal {
-    margin-left: 2.5em;
 }
 
 .our-team-content {
-    padding: 10em 8em;
+    padding: 14em 8em;
+}
+
+.our-team-content .tagline {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #848484;
 }
 
 .our-team-content h2 {
@@ -248,57 +262,62 @@ nav {
 }
 
 .our-team-content .profile-heads {
-    margin-top: 1em;
-    background-color: #FFF;
-    overflow-y: scroll;
+    padding-top: 4em;
 }
 
 .card-wrapper {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    flex-direction: row;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-row-gap: 1.8em;
+    grid-column-gap: 2em;
 }
 
 .card {
-    height: 34em;
-    width: 30%;
-    padding: 2em 4em;
+    width: 80%;
+    padding: 2em;
     background-color: #EBEEF8;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin: 1rem 3em;
+    text-align: center;
+    justify-content: space-around;
     box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
-    cursor: pointer;
 }
 
 .card .profile-img {
-    width: 14rem;
-    height: 14rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 80%;
-    margin-top: -2rem;
-    z-index: 3;
+    margin-top: 0rem;
     border: 1px solid #EBEEF8;
 }
 
 .card h3 {
     text-align: center;
     font-size: 2.0rem;
-    padding: 1em;
+    padding: 0.4em;
     color: #333;
-    margin: 1.5rem 0;
+    margin: 0.3rem 0;
 }
 
 .job-title {
-    color: #777;
-    font-size: 1.5rem;
+    color: #575757;
+    font-size: 1.2rem;
+}
+
+.card .bio {
+    margin-top: 2.5em;
+    padding: 1em 2em;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 0.9em;
+    background-color: #C0392B;
+    border-radius: 2em;
+    cursor: pointer;
 }
 
 .sudhendra h3 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 .sudhendra .profile-img {
@@ -311,46 +330,51 @@ nav {
     font-size: 1.8rem;
 }
 
+.arul .job-title {
+    margin-top: 1em;
+}
+
+.arul .bio {
+}
+
 .vedpal .profile-img {
-    margin-top: 2.0em;
+}
+
+.vedpal .job-title {
 }
 
 .namrata .profile-img {
-    margin-top: 2.0em;
 }
 
 .namrata h3 {
-    font-size: 1.8rem;
 }
 
 .namrata .job-title {
-    font-size: 1.4rem;
 }
 
 .uma .profile-img {
-    margin-top: 1.5em;
 }
 
 .uma h3 {
-    font-size: 1.8rem;
+}
+
+
+.uma .job-title {
 }
 
 .dipankar .profile-img {
-    margin-top: 1.5em;
 }
 
 .dipankar h3 {
-    font-size: 1.8rem;
+    font-size: 1.8em;
 }
 
 .ganesh .profile-img {
-    margin-top: 1.5em;
 }
 
 .ganesh h3 {
-    font-size: 1.8rem;
+    font-size: 1.8em;
 }
-
 
 
 .card .about {
@@ -375,7 +399,8 @@ nav {
     z-index: 10;
     padding: 1em 1em;
     background-color: white;
-    width: 80%;
+    width: 85%;
+    max-height: 85%;
     overflow-y: scroll;
 }
 
@@ -400,7 +425,7 @@ nav {
 }
 
 .our-team-content .modal-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -416,6 +441,7 @@ nav {
 .our-team-content .modal-body {
     padding: 1em 1.5em;
     font-size: 0.9rem;
+    color: #313131;
 }
 
 #overlay {
@@ -436,21 +462,28 @@ nav {
 }
 
 .products-content {
-    padding: 10em 8em;
+    padding: 12em 8em;
 }
 
-.products {
-    overflow-y: scroll;
+.products-content .tagline {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #848484;
 }
 
-.products-content .title {
+.products-content .title-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.products-content .title-line .title {
     font-size: 1.5em;
-    float: left;
 }
 
 .products-content .download {
     font-size: 0.8em;
-    float: right;
 }
 
 .products-content .download a{
@@ -459,7 +492,6 @@ nav {
 }
 
 .product-list {
-    clear: both;
     padding-top: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -468,6 +500,12 @@ nav {
 }
 
 .product-list .prod-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    color: #313131;
     background-color: #E1E1E1;
     border-radius: 10px;
     padding: 2em;
@@ -489,6 +527,7 @@ nav {
     font-weight: bold;
     border: none;
     display: inline-block;
+    color: #FFF;
     margin-top: 0.8em;
     padding: 0.1em 0.5em;
     padding-top: 0.4em;
