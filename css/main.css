@@ -14,31 +14,36 @@ body {
 
 nav {
     display: flex;
-    min-height: 20vh;
-    max-height: 16vh;
+    height: 20vh;
+    justify-content: space-between;
+    align-items: center;
     background: #FFF;
-    position: absolute;
     z-index: 1;
     width: 100%;
 }
 
+.nav-logo {
+    flex: 0 1 20vw;
+    text-align: center;
+}
+
 .nav-logo img {
-    padding: 3em 1em;
-    margin-left: 5.4em;
-    width: 50%;
+    width: 58%;
 }
 
 .nav-links {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    margin-left: auto;
+    flex: 0 0 32vw;
+}
+
+.nav-links-1 {
+    justify-content: flex-end;
 }
 
 
 .nav-links li {
     list-style: none;
+    margin: 0 5rem;
 }
 
 .nav-links a {
@@ -71,33 +76,6 @@ nav {
     background: #313131;
 }
 
-.content .image {
-}
-
-.content .image img{
-    position: absolute;
-    right: 6%;
-    bottom: 20%;
-}
-
-.content .text {
-    color: #FFF;
-    /*background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));*/
-    background: rgba(0, 0, 0, 0.35);
-    position: absolute;
-    top: 32%;
-    left: 4%;
-    margin-right: 48em;
-    margin-left: 3em;
-    margin-bottom: 10em;
-    border-radius: 1em;
-}
-
-.content .text img{
-    filter: invert(1);
-}
-
-
 
 .content h1 {
     padding-top: 0.6em;
@@ -106,6 +84,27 @@ nav {
     padding-bottom: 0.4em;
 }
 
+
+.content .tagline {
+    text-align: center;
+    padding-top: 0.2em;
+    font-size: 2.4em;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.content .image {
+    padding: 1em;
+    flex: 0 1 20vw;
+    text-align: center;
+}
+
+.content .image img{
+    filter: invert(1);
+    width: 38%;
+}
+/*
+ *
 .content .ai {
     width: 100%;
     height: auto;
@@ -113,15 +112,6 @@ nav {
     display: inline-block;
     padding: 0.6em 8em;
 }
-
-.content .tagline {
-    text-align: center;
-    padding-top: 4.4em;
-    font-size: 2.4em;
-    font-weight: bold;
-    color: #FFF;
-}
-
 .content .ai img {
     width: 12%;
     float: right;
@@ -166,8 +156,19 @@ nav {
     float: right;
 }
 
+*/
+
 .about-us-content {
-    padding: 10em 10em;
+    padding: 3em 10em;
+    overflow: visible;
+}
+
+.about-us-content .tagline {
+    text-align: center;
+    margin-top: -2em;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #848484;
 }
 
 .about-us-content h2 {
@@ -538,6 +539,7 @@ nav {
 }
 
 .products-content .modal {
+    clear: both;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -562,6 +564,10 @@ nav {
 
 .products-content .modal.active {
     transform: translate(-50%, -50%) scale(1);
+}
+
+.hamburger {
+    display: none;
 }
 
 
@@ -611,7 +617,6 @@ nav {
 */
 
 .contact-content {
-    overflow: hidden;
     padding: 10em 12em;
 }
 
