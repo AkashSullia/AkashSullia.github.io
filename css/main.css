@@ -8,6 +8,7 @@
 }
 
 body {
+    background-color: #E3E3E3;
 }
 
 nav {
@@ -163,7 +164,7 @@ nav {
 
 .about-us-content .tagline {
     text-align: center;
-    margin-top: -4em;
+    margin-top: -3em;
     padding-bottom: 1em;
     font-size: 1.4em;
     font-weight: bold;
@@ -177,7 +178,7 @@ nav {
 }
 
 .about-us-content h2 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     text-align: left;
 }
 
@@ -202,7 +203,7 @@ nav {
 }
 
 .our-clientele {
-    padding: 1em;
+    padding: 2em;
     text-align: center;
 }
 
@@ -211,6 +212,7 @@ nav {
 }
 
 .our-clientele img {
+    background-color: #FFF;
     padding: 1em;
     width: 50em;
 }
@@ -240,7 +242,7 @@ nav {
 }
 
 .our-team-content {
-    padding: 14em 8em;
+    padding: 12em 8em;
 }
 
 .our-team-content .tagline {
@@ -505,7 +507,7 @@ nav {
     text-align: center;
     justify-content: space-between;
     color: #313131;
-    background-color: #E1E1E1;
+    background-color: #EBEEF8;
     border-radius: 10px;
     padding: 2em;
     box-shadow: 0px 10px 5px #B2BEC3;
@@ -672,7 +674,7 @@ nav {
 */
 
 .contact-content {
-    padding: 10em 10em;
+    padding: 12em 10em;
 }
 
 .contact-content .tagline {
