@@ -72,7 +72,7 @@ nav {
 .content {
     position: relative;
     background: #313131;
-    padding-top: 10em;
+    padding-top: 11.5em;
 }
 
 
@@ -93,14 +93,14 @@ nav {
 }
 
 .content .image {
-    padding: 1em;
+    padding: 2em;
     flex: 0 1 20vw;
     text-align: center;
 }
 
 .content .image img{
     filter: invert(1);
-    width: 38%;
+    width: 42%;
 }
 /*
  *
