@@ -225,11 +225,9 @@ nav {
 
 .about-us-content .partners-logos {
     display: flex;
-    align-items: center;
-    align-content: center;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em 8em;
 }
 
 .about-us-content .partners .column {
@@ -327,7 +325,7 @@ nav {
 }
 
 .arul h3 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .arul .job-title {
@@ -337,7 +335,8 @@ nav {
 .arul .bio {
 }
 
-.vedpal .profile-img {
+.vedpal h3 {
+    font-size: 1.8rem;
 }
 
 .vedpal .job-title {
@@ -401,7 +400,7 @@ nav {
     background-color: white;
     width: 85%;
     max-height: 85%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 .our-team-content .modal ol {
@@ -578,7 +577,6 @@ nav {
 }
 
 .products-content .modal {
-    clear: both;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -594,11 +592,29 @@ nav {
 
 .products-content .modal .desc {
     text-align: left;
+    padding-bottom: 1em;
 }
 
 .products-content .modal .advantage {
     text-align: left;
     margin-left: 2em;
+}
+
+.modal .download-button {
+    background-color: #000;
+    border-radius: 2em;
+    padding: 0.6em 0.8em;
+    color: #FFF;
+    position: absolute;
+    font-size: 0.9em;
+    right: 3%;
+    top: 4%;
+    cursor: pointer;
+}
+
+.modal .download-button a{
+    text-decoration: none;
+    color: #FFF;
 }
 
 .products-content .modal.active {
@@ -656,27 +672,42 @@ nav {
 */
 
 .contact-content {
-    padding: 10em 12em;
+    padding: 10em 10em;
+}
+
+.contact-content .tagline {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #848484;
 }
 
 .contact-content h2 {
     font-size: 2em;
-    text-align: left;
+    text-align: center;
 }
 
 .contact-content .address {
     font-size: 1.2em;
     padding: 1em 1em;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .contact-content .phone-email {
     font-size: 1.2em;
     padding: 0 1em;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.phone-email .ids {
+    text-align: center;
 }
 
 .contact-content .sm-icons {
     padding-top: 8em;
-    text-align: left;
+    text-align: center;
 }
 
 .contact-content .sm-icons ul {
