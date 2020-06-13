@@ -561,7 +561,6 @@ nav {
 
 .sanitiser img {
     width: 85%;
-    padding: 0.5em;
 }
 
 .i-inventory img {
@@ -570,17 +569,14 @@ nav {
 
 .i-trailer img {
     width: 100%;
-    padding: 2.5em;
 }
 
 .i-cits img {
     width: 78%;
-    padding: 1.0em;
 }
 
 .smart-store img {
     width: 100%;
-    padding: 1.0em;
 }
 
 .products-content .modal {
