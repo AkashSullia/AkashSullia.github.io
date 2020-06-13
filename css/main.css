@@ -101,7 +101,8 @@ nav {
 
 .content .image img{
     filter: invert(1);
-    width: 42%;
+    max-width: 32vw;
+    height: auto;
 }
 /*
  *
@@ -159,21 +160,22 @@ nav {
 */
 
 .about-us-content {
-    padding: 16em 10em;
+    padding: 11.5em 10em;
 }
 
-.about-us-content .tagline {
-    text-align: center;
-    margin-top: -3em;
-    padding-bottom: 1em;
+.red-tagline {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 7.0em;
     font-size: 1.4em;
     font-weight: bold;
-    color: #848484;
+    color: #EC1F26;
 }
 
 .about-us-content .wrapper {
     display: grid;
-    grid-template-columns: 70% 30%;
+    grid-template-columns: 60% 40%;
     grid-row-gap: 1em;
 }
 
@@ -183,8 +185,8 @@ nav {
 }
 
 .about-us-content p {
-    padding: 0.4em 1em;
-    padding-right: 6em;
+    padding: 0.4em 0;
+    padding-right: 8em;
     font-size: 0.9em;
 }
 
@@ -212,16 +214,16 @@ nav {
 }
 
 .our-clientele img {
-    background-color: #FFF;
     padding: 1em;
     width: 50em;
 }
 
 
 .about-us-content .partners {
-    display: inline;
+    display: absolute;
     text-align: center;
     font-size: 1.5em;
+    margin-top: -10em;
     padding: 1em 0;
 }
 
@@ -229,16 +231,16 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2em 8em;
+    padding: 1em 14.0em;
 }
 
-.about-us-content .partners .column {
+.partners .camfy img {
+    margin-left: 2em;
+    width: 75%;
 }
 
-.about-us-content .partners .camfy {
-}
-
-.about-us-content .partners .eyeseal {
+.partners .eyeseal img {
+    width: 75%;
 }
 
 .our-team-content {
@@ -247,9 +249,10 @@ nav {
 
 .our-team-content .tagline {
     text-align: center;
+    padding-top: 0.2em;
     font-size: 1.4em;
     font-weight: bold;
-    color: #848484;
+    color: #EC1F26;
 }
 
 .our-team-content h2 {
@@ -262,7 +265,7 @@ nav {
 }
 
 .our-team-content .profile-heads {
-    padding-top: 4em;
+    padding-top: 2em;
 }
 
 .card-wrapper {
@@ -468,9 +471,10 @@ nav {
 
 .products-content .tagline {
     text-align: center;
+    padding-top: 0.2em;
     font-size: 1.4em;
     font-weight: bold;
-    color: #848484;
+    color: #EC1F26;
 }
 
 .products-content .title-line {
@@ -521,6 +525,7 @@ nav {
 }
 
 .prod-card img {
+    border: 1px solid black;
 }
 
 .product-list button {
@@ -555,7 +560,7 @@ nav {
 }
 
 .sanitiser img {
-    width: 75%;
+    width: 85%;
     padding: 0.5em;
 }
 
@@ -679,9 +684,10 @@ nav {
 
 .contact-content .tagline {
     text-align: center;
+    padding-top: 0.2em;
     font-size: 1.4em;
     font-weight: bold;
-    color: #848484;
+    color: #EC1F26;
 }
 
 .contact-content h2 {
