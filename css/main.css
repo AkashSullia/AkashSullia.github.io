@@ -167,7 +167,7 @@ nav {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    padding-top: 7.0em;
+    padding-top: 10%;
     font-size: 1.4em;
     font-weight: bold;
     color: #EC1F26;
@@ -692,6 +692,7 @@ nav {
 }
 
 .contact-content .address {
+    text-align: center;
     font-size: 1.2em;
     padding: 1em 1em;
     width: 50%;
@@ -699,6 +700,7 @@ nav {
 }
 
 .contact-content .phone-email {
+    text-align: center;
     font-size: 1.2em;
     padding: 0 1em;
     width: 50%;
