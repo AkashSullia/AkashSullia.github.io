@@ -14,7 +14,7 @@ body {
 nav {
     display: flex;
     position: fixed;
-    height: 20vh;
+    height: 24.0vh;
     justify-content: space-between;
     align-items: center;
     background: #FFF;
@@ -160,14 +160,14 @@ nav {
 */
 
 .about-us-content {
-    padding: 11.5em 10em;
+    padding: 12.5em 10em;
 }
 
 .red-tagline {
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    padding-top: 10%;
+    margin-top: 7.2em;
     font-size: 1.4em;
     font-weight: bold;
     color: #EC1F26;
@@ -377,7 +377,7 @@ nav {
 }
 
 .ganesh h3 {
-    font-size: 1.8em;
+    margin-top: 0.5em;
 }
 
 
@@ -556,7 +556,7 @@ nav {
 }
 
 .sanitiser .title {
-    font-size: 1.2em;
+    font-size: 1.38em;
 }
 
 .sanitiser img {
@@ -625,7 +625,6 @@ nav {
 }
 
 .hamburger {
-    display: none;
 }
 
 
@@ -753,6 +752,7 @@ nav {
     }
 
     .hamburger {
+        display: block;
         z-index: 5;
         position: fixed;
         cursor: pointer;
@@ -976,7 +976,7 @@ nav {
     .line {
         width: 32px;
         height: 4px;
-        background: white;
+        background: gray;
         margin: 8px;
     }
 
@@ -986,7 +986,8 @@ nav {
     }
 
     .hamburger {
-        z-index: 5;
+        display: block;
+        z-index: 1;
         position: fixed;
         cursor: pointer;
         right: 15%;
@@ -1000,7 +1001,8 @@ nav {
         height: 100vh;
         width: 40%;
         padding: 8em 1em;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(230, 230, 230, 0.8);
+        justify-content: center;
         flex-direction: column;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
@@ -1014,21 +1016,18 @@ nav {
         opacity: 0;
     }
 
+    .nav-links-2 {
+        justify-content: flex-end;
+    }
+
 
     .nav-logo img {
+        position: absolute;
         padding: 0;
-        margin-left: 2em;
         width: 25%;
     }
 
     .content .text {
-        color: #FFF;
-        position: absolute;
-        background: rgba(0, 0, 0, 0.35);
-        top: 30%;
-        left: 0%;
-        margin: 0em 0em;
-        width: 100%;
     }
 
     .content h1 {
@@ -1036,26 +1035,6 @@ nav {
         font-size: 1.8em;
         text-align: center;
         padding-bottom: 0.4em;
-    }
-
-    .content .ai {
-        padding: 0.6em 1.5em;
-        font-size: 1em;
-    }
-
-    .content .fc {
-        padding: 0.6em 1.5em;
-        font-size: 1em;
-    }
-
-    .content .ip {
-        padding: 0.6em 1.5em;
-        font-size: 1em;
-    }
-
-    .content .da {
-        padding: 0.6em 1.5em;
-        font-size: 1em;
     }
 
     .our-clientele img {
