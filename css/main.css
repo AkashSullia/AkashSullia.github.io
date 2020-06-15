@@ -14,7 +14,7 @@ body {
 nav {
     display: flex;
     position: fixed;
-    height: 24.0vh;
+    height: 24vh;
     justify-content: space-between;
     align-items: center;
     background: #FFF;
@@ -164,10 +164,11 @@ nav {
 }
 
 .red-tagline {
-    position: fixed;
+    position: absolute;
+    z-index: 5;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 7.2em;
+    margin-top: calc(20vh + 2px);
     font-size: 1.4em;
     font-weight: bold;
     color: #EC1F26;
