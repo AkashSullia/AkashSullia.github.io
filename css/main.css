@@ -164,8 +164,8 @@ nav {
 }
 
 .red-tagline {
-    position: absolute;
-    z-index: 5;
+    position: fixed;
+    z-index: 1;
     left: 50%;
     transform: translateX(-50%);
     margin-top: calc(20vh + 2px);
