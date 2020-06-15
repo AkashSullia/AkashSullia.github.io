@@ -73,7 +73,7 @@ nav {
 .content {
     position: relative;
     background: #313131;
-    padding-top: 11.5em;
+    padding-top: calc(24vh + 0.1em);
 }
 
 
@@ -160,7 +160,7 @@ nav {
 */
 
 .about-us-content {
-    padding: 12.5em 10em;
+    padding: calc(24vh + 0.5em) 10em;
 }
 
 .red-tagline {
@@ -245,7 +245,7 @@ nav {
 }
 
 .our-team-content {
-    padding: 12em 8em;
+    padding: calc(24vh + 0.5em) 8em;
 }
 
 .our-team-content .tagline {
@@ -467,7 +467,7 @@ nav {
 }
 
 .products-content {
-    padding: 12em 8em;
+    padding: calc(24vh + 0.5em) 8em;
 }
 
 .products-content .tagline {
@@ -676,7 +676,7 @@ nav {
 */
 
 .contact-content {
-    padding: 12em 10em;
+    padding: calc(24vh + 0.5em) 10em;
 }
 
 .contact-content .tagline {
