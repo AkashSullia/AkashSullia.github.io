@@ -1,0 +1,235 @@
+.our-team-content {
+    padding: calc(24vh + 0.5em) 8em;
+}
+
+.our-team-content .tagline {
+    text-align: center;
+    padding-top: 0.2em;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #EC1F26;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: left;
+}
+
+section {
+    background-color: #FFF;
+}
+
+.profile-heads {
+    padding-top: 2em;
+}
+
+.card-wrapper {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-row-gap: 1.8em;
+    grid-column-gap: 2em;
+}
+
+.card {
+    width: 80%;
+    padding: 2em;
+    background-color: #EBEEF8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    box-shadow: .5rem .5rem 3rem rgba(0, 0, 0, 0.2);
+}
+
+.card .profile-img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 80%;
+    margin-top: 0rem;
+    border: 1px solid #EBEEF8;
+}
+
+.card h3 {
+    text-align: center;
+    font-size: 2.0rem;
+    padding: 0.4em;
+    color: #333;
+    margin: 0.3rem 0;
+}
+
+.job-title {
+    color: #575757;
+    font-size: 1.2rem;
+}
+
+.card .bio {
+    margin-top: 2.5em;
+    padding: 1em 2em;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 0.9em;
+    background-color: #C0392B;
+    border-radius: 2em;
+    cursor: pointer;
+}
+
+.sudhendra h3 {
+    font-size: 1.5rem;
+}
+
+.sudhendra .profile-img {
+}
+
+.arul .profile-img {
+}
+
+.arul h3 {
+    font-size: 1.5rem;
+}
+
+.arul .job-title {
+    margin-top: 1em;
+}
+
+.arul .bio {
+}
+
+.vedpal h3 {
+    font-size: 1.8rem;
+}
+
+.vedpal .job-title {
+}
+
+.namrata .profile-img {
+}
+
+.namrata h3 {
+}
+
+.namrata .job-title {
+}
+
+.uma .profile-img {
+}
+
+.uma h3 {
+}
+
+
+.uma .job-title {
+}
+
+.dipankar .profile-img {
+}
+
+.dipankar h3 {
+    font-size: 1.8em;
+}
+
+.ganesh .profile-img {
+}
+
+.ganesh h3 {
+    margin-top: 0.5em;
+}
+
+
+.card .about {
+    padding: 0.3rem 2.0rem;
+    background-color: #445AE3;
+    border-radius: 2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    color: #EEE;
+    font-size: 1.2rem;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    padding: 1em 1em;
+    background-color: white;
+    width: 85%;
+    max-height: 85%;
+    overflow-y: auto;
+}
+
+.modal ol {
+    margin-left: 1.8em;
+}
+
+.modal ul {
+    margin-left: 1.8em;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 1em 1.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 1em 1.5em;
+    font-size: 0.9rem;
+    color: #313131;
+}
+
+@media screen and (max-width: 768px) {
+    .our-team-content {
+        padding: 5.0em 3.5em;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-row-gap: 1.8em;
+        grid-column-gap: 1.5em;
+        margin-left: -1.5em;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-row-gap: 1.8em;
+        grid-column-gap: 1.5em;
+        margin-left: -1.5em;
+    }
+}

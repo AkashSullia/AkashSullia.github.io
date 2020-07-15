@@ -1,0 +1,88 @@
+body {
+    overflow: hidden;
+}
+
+.contact-content {
+    padding: calc(24vh + 0.5em) 10em;
+}
+
+.tagline {
+    text-align: center;
+    padding-top: 0.2em;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #EC1F26;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+.address {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 1em 1em;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.phone-email {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0 1em;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.phone-email .ids {
+    text-align: center;
+}
+
+.sm-icons {
+    padding-top: 8em;
+    text-align: center;
+}
+
+.sm-icons ul {
+    display: inline;
+}
+
+.sm-icons ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.mapouter {
+    display: inline-block;
+}
+
+.sm-icons ul li img {
+    float: left;
+    padding: 1em 2em;
+    width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-content {
+        padding: 6em 0em;
+    }
+
+    .address {
+        padding: 1em 0em;
+        width: 80%;
+    }
+
+    .phone-email {
+        padding: 0 0em;
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 460px) {
+    .sm-icons {
+        padding-top: 2em;
+        text-align: center;
+    }
+}

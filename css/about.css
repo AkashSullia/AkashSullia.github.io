@@ -1,0 +1,216 @@
+.about-us-content {
+    padding: calc(24vh + 0.5em) 10em;
+}
+
+.red-tagline {
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: calc(20vh + 2px);
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #EC1F26;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-row-gap: 1em;
+}
+
+h2 {
+    font-size: 1.8em;
+    text-align: left;
+}
+
+p {
+    padding: 0.4em 0;
+    padding-right: 8em;
+    font-size: 0.9em;
+}
+
+.our-usp {
+    padding: 0.8em 0em;
+}
+
+.our-usp ul {
+    padding-left: 0.9em;
+    font-size: 0.9em;
+}
+
+.our-usp ul li {
+    list-style: disc inside;
+    line-height: 3em;
+}
+
+.our-clientele {
+    padding: 2em;
+    text-align: center;
+}
+
+.our-clientele h2 {
+    text-align: center;
+}
+
+.our-clientele img {
+    padding: 1em;
+    width: 50em;
+}
+
+
+.partners {
+    display: absolute;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: -10em;
+    padding: 1em 0;
+}
+
+.partners-logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em 14.0em;
+}
+
+.partners .camfy img {
+    margin-left: 2em;
+    width: 75%;
+}
+
+.partners .eyeseal img {
+    width: 75%;
+}
+
+@media screen and (max-width: 768px) {
+    .red-tagline {
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: calc(7vh + 2px);
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #EC1F26;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .about-us-content {
+        padding: 7.5em 4em;
+    }
+
+    .about-us-content p {
+        padding-right: 2em;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .our-clientele {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .our-clientele img {
+        padding: 2em 0;
+        width: 45em;
+        margin-left: -5em;
+    }
+
+    .partners {
+        display: absolute;
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: -8em;
+        padding: 1em 0;
+    }
+
+    .partners-logos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1em 2em;
+    }
+
+    .partners .camfy img {
+        margin-left: 2em;
+        width: 75%;
+    }
+
+    .partners .eyeseal img {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .red-tagline {
+        position: fixed;
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: calc(7vh + 2px);
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #EC1F26;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .about-us-content {
+        padding: 7.5em 2em;
+    }
+
+    .about-us-content p {
+        padding-right: 2em;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .our-clientele {
+        padding: 2em;
+        text-align: center;
+    }
+
+    .our-clientele img {
+        padding: 1em 0;
+        width: 28em;
+        margin-left: -3em;
+    }
+
+    .partners {
+        display: absolute;
+        text-align: center;
+        font-size: 1.5em;
+        margin-top: -5em;
+        padding: 1em 0;
+    }
+
+    .partners-logos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1em 0em;
+    }
+
+    .partners .camfy img {
+        margin-left: 2em;
+        width: 60%;
+    }
+
+    .partners .eyeseal img {
+        padding-top: 1em;
+        margin-left: 2em;
+        width: 75%;
+    }
+}
