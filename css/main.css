@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #E3E3E3;
+    background-color: #313131;
     overflow-x: hidden;
 }
 
@@ -125,51 +125,6 @@ nav {
 }
 
 
-/*
-.product .title {
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.4em;
-}
-
-
-.product .advantage ul li{
-    margin-left: 0.8em;
-    list-style: disc;
-}
-
-.face-ai .title,.desc,.advantage {
-    padding-top: 4.2em;
-}
-
-.i-inventory .title,.desc,.advantage {
-    padding-top: 3.6em;
-}
-
-.i-trailer .title,.desc,.advantage {
-    padding-top: 5.4em;
-}
-
-.i-cits .title,.desc,.advantage {
-    padding-top: 4.4em;
-}
-
-.smart-store .title,.desc,.advantage {
-    padding-top: 4.4em;
-}
-
-.product .more-details {
-    text-align: center;
-    font-weight: bold;
-    color: #2475BB;
-}
-
-.product .more-details a {
-    text-decoration: none;
-    color: #2475BB;
-}
-*/
-
 
 @media screen and (max-width: 768px) {
     .content {
@@ -177,6 +132,7 @@ nav {
     }
 
     .content .image img{
+        padding-top: 1em;
         filter: invert(1);
         max-width: 62vw;
         height: auto;
@@ -188,6 +144,7 @@ nav {
         background: white;
         margin: 8px;
     }
+
     nav {
         max-height: 10vh;
         position: fixed;
@@ -322,14 +279,18 @@ nav {
         width: 25%;
     }
 
-    .content .text {
-    }
-
     .content h1 {
         padding-top: 0.6em;
         font-size: 1.8em;
         text-align: center;
         padding-bottom: 0.4em;
+    }
+
+    .content .image img{
+        padding-top: 1em;
+        filter: invert(1);
+        max-width: 84vw;
+        height: auto;
     }
 }
 

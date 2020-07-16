@@ -1,3 +1,7 @@
+body {
+    background-color: #E3E3E3;
+}
+
 .products-content {
     padding: calc(24vh + 0.5em) 8em;
 }
