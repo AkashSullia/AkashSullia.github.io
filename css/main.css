@@ -10,41 +10,44 @@
 body {
     background-color: #313131;
     overflow-x: hidden;
+    margin-bottom: 50px;
 }
 
 nav {
     display: flex;
     position: fixed;
-    height: 24vh;
-    justify-content: space-between;
     align-items: center;
     background: #FFF;
+    text-align: center;
     z-index: 1;
     width: 100%;
+    height: 24vh;
 }
 
 .nav-logo {
-    flex: 0 1 20vw;
-    text-align: center;
+    position: absolute;
 }
 
 .nav-logo img {
-    width: 58%;
+    width: 55%;
 }
 
 .nav-links {
     display: flex;
-    flex: 0 0 34vw;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 3.0em;
 }
-
-.nav-links-1 {
-    justify-content: flex-end;
-}
-
 
 .nav-links li {
     list-style: none;
     margin: 0 5rem;
+    justify-content: space-around;
+}
+
+.nav-links .team {
+    margin-right: auto;
 }
 
 .nav-links a {
@@ -103,6 +106,26 @@ nav {
     height: auto;
 }
 
+.bnav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #DDD;
+}
+
+.bnav-item {
+    position: relative;
+    padding: 10px;
+    float: left;
+    outline: none;
+    display: block;
+}
+
+.bnav-right {
+    float: right;
+}
+
 #overlay {
     position: fixed;
     opacity: 0;
@@ -146,10 +169,41 @@ nav {
     }
 
     nav {
+        height: 16vh;
+    }
+
+    .nav-logo img {
+        width: 42%;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .nav-links {
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    .nav-links li {
+        list-style: none;
+        margin: 0 3rem;
+    }
+
+
+    .content .tagline {
+        padding-top: 4vh;
+    }
+
+    .content .image img{
+        max-width: 56vw;
+    }
+
+    /*
+    nav {
         max-height: 10vh;
         position: fixed;
     }
-    /*
     nav {
         max-height: 10vh;
         position: fixed;
@@ -232,6 +286,17 @@ nav {
         margin: 8px;
     }
 
+    .footer-nav {
+        position: fixed;
+        overflow: hidden;
+        z-index: 10;
+        background-color: #FFF;
+        width: 100%;
+        height: 2em;
+        bottom: 0;
+    }
+
+    /*
     nav {
         max-height: 10vh;
         position: fixed;
@@ -278,6 +343,7 @@ nav {
         padding: 0;
         width: 25%;
     }
+   */
 
     .content h1 {
         padding-top: 0.6em;

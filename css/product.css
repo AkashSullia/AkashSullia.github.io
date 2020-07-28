@@ -6,10 +6,13 @@ body {
     padding: calc(24vh + 0.5em) 8em;
 }
 
-.tagline {
-    text-align: center;
-    padding-top: 0.2em;
-    font-size: 1.4em;
+.red-tagline {
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: calc(20vh + 2px);
+    font-size: 1.2em;
     font-weight: bold;
     color: #EC1F26;
 }
